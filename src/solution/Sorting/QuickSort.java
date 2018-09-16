@@ -1,4 +1,4 @@
-package solution;
+package solution.Sorting;
 
 public class QuickSort {
 	public int[] quickSort(int[] array) {
