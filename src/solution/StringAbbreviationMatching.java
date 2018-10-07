@@ -20,6 +20,8 @@ public class StringAbbreviationMatching {
 			return false;
 		}
 		int num = 0;
+		// the order is very important, otherwise it will NPE
+		// check first whether pattIndex is out of bound or not
 		while (pattIndex < pattern.length() && pattern.charAt(pattIndex) >= '0' && pattern.charAt(pattIndex) <= '9') {
 			num = num * 10 + (pattern.charAt(pattIndex) - '0');
 			pattIndex++;
